@@ -1,5 +1,16 @@
-{{ if not (in (.Site.BaseURL | string) "localhost") }}{{ if .Site.Params.gtm_id}}  <link href="https://www.googletagmanager.com" rel="preconnect" crossorigin>
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com">{{ end }}
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PV574TL');</script>
+    <!-- End Google Tag Manager -->
+
+<!-- https://martijnvanvreeden.nl/how-to-add-google-tag-manager-to-hugo-static-website/#:~:text=html%20.,Manager%20partial%20to%20include%20it.&text=You%20should%20add%20it%20anywhere%20between%20the%20tags.   ......it does not work ....many errors are shown in this file -->
+
+<!-- {{ if not (in (.Site.BaseURL | string) "localhost") }}{{ if .Site.Params.gtm_id}}  <link href="https://www.googletagmanager.com" rel="preconnect" crossorigin>
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">{{ end }} -->
+<!-- 
 {{- if eq .Site.Params.gtm_datalayer "basic"}}  <script>
 	window.dataLayer = window.dataLayer || [];
 	window.dataLayer.push({
@@ -22,9 +33,10 @@
 		{{- if .IsHome }}'pageType2': 'home',{{- else if eq .Kind "taxonomy" }}'pageType2': 'tag',{{- else if eq .Type "page" }}'pageType2': 'page',{{- else }}'pageType2': 'post',{{- end }}
 		'pageLanguage': '{{ .Language }}'
 	 });
-  </script> {{- end}}
-{{ if .Site.Params.gtm_id}}<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  </script> {{- end}} -->
+
+<!-- {{ if .Site.Params.gtm_id}}<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','{{ .Site.Params.gtm_id }}');</script>{{ end }}{{ end }}
+	})(window,document,'script','dataLayer','{{ .Site.Params.gtm_id }}');</script>{{ end }}{{ end }} -->

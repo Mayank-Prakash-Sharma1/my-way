@@ -9,8 +9,10 @@ paginate = "6"
 summaryLength = "20"
 # google analytics
 googleAnalytics = "" # Ex: UA-123-45
+
 # Google Tag Manager
-gtm_id = "GTM-PV574TL"
+# gtm_id = "GTM-PV574TL"  ....doesn't work
+
 # disqus short name
 disqusShortname = "themefisher-template" # get your shortname form here : https://disqus.com
 # disable language

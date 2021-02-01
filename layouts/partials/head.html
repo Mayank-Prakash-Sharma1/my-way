@@ -10,9 +10,10 @@
 
 
 
-  {{ if .Site.Params.gtm_id}}{{- partial "gtm.html" . }}{{ end }}
+  <!-- {{ if .Site.Params.gtm_id}}{{- partial "gtm.html" . }}{{ end }} -->
 
-  
+  {{ partial "gtm" . }}
+
 
   <!-- plugins -->
   {{ $permalink:= .Permalink }}
